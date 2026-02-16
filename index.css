@@ -29,6 +29,7 @@ p {
 ul {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 /* Header Styles NAV BAR */
@@ -46,7 +47,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 30px;
-  padding: 16px 0 16px 30px;
+  padding: 16px 30px 16px 30px;
   color: #fbf6f6;
 }
 
@@ -58,6 +59,7 @@ ul {
   display: flex;
   gap: 35px;
   margin-left: auto;
+  
 }
 
 .nav-links a:hover {
@@ -71,4 +73,58 @@ ul {
     border-radius: 12px;
     background: rgba(255,255,255,0.18);
     border: 1px solid rgba(255,255,255,1);
+}
+
+/* HERO SECTION */
+
+.hero {
+  height: 50vh;
+  background-image: url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Oscurece la imagen para que el texto se vea mejor */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #000;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #cccccc;
 }
