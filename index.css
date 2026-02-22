@@ -35,18 +35,19 @@ ul {
 /* Header Styles NAV BAR */
 
 .site-header {
-  background-color: #424242;
+  background-color: #000000;
   position: sticky;
   top: 0;
   z-index: 50;
+  align-items: center;
 }
 
 .nav {
-  width: min(1100px, cal(100% - 40px));
+  width: min(1100px, calc(100% - 40px));
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   padding: 16px 30px 16px 30px;
   color: #fbf6f6;
 }
@@ -54,6 +55,9 @@ ul {
 .brand {
   font-weight: 800;
   letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  gap:30px;
 }
 .nav-links {
   display: flex;
@@ -68,11 +72,18 @@ ul {
 }
 
 .nva-cta {
-    margin-left: 8px;
-    padding: 10px 14px;
-    border-radius: 12px;
-    background: rgba(255,255,255,0.18);
-    border: 1px solid rgba(255,255,255,1);
+  background: transparent;
+  border: 1px solid #ffffff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-left: 8px;
+  transition: 0.3s ease;
+}
+
+.nva-cta:hover {
+  background: #e6be2f;
+  color: #000000;
 }
 
 /* HERO SECTION */
@@ -127,4 +138,9 @@ ul {
 
 .hero-btn:hover {
   background-color: #cccccc;
+}
+
+.logo {
+  height: 45px; /* tamaño del logo */
+  width: auto;
 }
