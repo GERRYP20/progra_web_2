@@ -144,3 +144,147 @@ ul {
   height: 45px; /* tamaño del logo */
   width: auto;
 }
+
+/* STATS */ 
+
+.stats{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stat{
+    border: 2px solid #eee;
+    border-radius: 16px;
+    padding: 10px;
+    background: rgba(163, 228, 218, 0.10);
+}
+
+.stat-num{
+    font-size: 1.35rem;
+    font-weight: 900;
+}
+
+.stat-label{
+    color: #f3a3e8;
+    font-size: 1rem;
+    font-weight: 900;
+    margin-top: 4px;
+}
+
+.stat-label-highlight-pink{
+    color: #f3a3e8;
+    font-size: 1.20rem;
+    font-weight: 900;
+    margin-top: 4px;
+}
+
+.stat-label-highlight-white{
+    color: #f0f0f0;
+    font-size: 1.20rem;
+    font-weight: 900;
+    margin-top: 15px;
+} 
+
+/* CTA SECTION */
+
+.cta {
+  background: linear-gradient(to right, #0a0a0a, #111);
+  padding: 80px 20px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.cta-container {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.cta-text h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cta-text p {
+  color: #aaa;
+  font-size: 16px;
+}
+
+.cta-button {
+  background: #4d9aff;
+  color: black;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #4dc1ff;
+  transform: translateY(-2px);
+}
+
+/* COMO FUNCIONA */
+
+.steps {
+  padding: 100px 20px;
+  background: #050505;
+}
+
+.steps-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 32px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.effect {
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #222;
+  transition: 0.3s;
+}
+
+.effect:hover {
+  transform: translateY(-8px);
+  border-color: #e6be2f;
+}
+
+.effect span {
+  color: #e6be2f;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.effect h3 {
+  color: white;
+  margin: 10px 0;
+}
+
+.effect p {
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
