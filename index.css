@@ -237,7 +237,7 @@ body {
 }
 
 .cta-button {
-  background: #4d9aff;
+  background: #e6be2f;
   color: black;
   padding: 14px 28px;
   border-radius: 12px;
@@ -246,7 +246,7 @@ body {
 }
 
 .cta-button:hover {
-  background: #4dc1ff;
+  background: #eed168;
   transform: translateY(-2px);
 }
 
