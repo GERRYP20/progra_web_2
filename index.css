@@ -243,6 +243,7 @@ body {
   border-radius: 12px;
   font-weight: bold;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .cta-button:hover {
